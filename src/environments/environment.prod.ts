@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://tacs-grupo1.herokuapp.com/api/v1'
+  apiUrl: 'https://tacs-utn-frba-grupo1.herokuapp.com/api/v1'
 };

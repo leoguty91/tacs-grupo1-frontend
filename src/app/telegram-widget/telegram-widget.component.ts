@@ -38,7 +38,7 @@ export class TelegramWidgetComponent implements OnInit, AfterViewInit {
         const script = document.createElement('script');
 
         script.src = 'https://telegram.org/js/telegram-widget.js?4';
-        script.setAttribute('data-telegram-login', 'tacs_grupo1_test_bot');
+        script.setAttribute('data-telegram-login', 'TacsUTNGrupo1Bot');
         script.setAttribute('data-size', 'large');
         script.setAttribute('data-onauth', 'TelegramLoginWidget.onTelegramAuth(user)');
         script.setAttribute('data-request-access', 'write');

@@ -4,7 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
+    "postbuild": "npm run deploy",
+    "predeploy": "rimraf ../tacs-grupo1-api/src/main/resources/public && mkdirp ../tacs-grupo1-api/src/main/resources/public",
+    "deploy": "copyfiles -f dist/tacs-frontend/** ../tacs-grupo1-api/src/main/resources/public",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -31,7 +34,8 @@
     "ngx-mat-select-search": "^1.4.1",
     "ngx-spinner": "^6.1.2",
     "rxjs": "~6.2.0",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "copyfiles": "~2.1.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.8.0",

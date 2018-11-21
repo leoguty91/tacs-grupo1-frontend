@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build --prod",
     "buildlocal": "ng build",
+    "builddocker": "ng build",
     "postbuild": "npm run deploy",
     "postbuildlocal": "npm run deploy",
     "predeploy": "rimraf ../tacs-grupo1-api/src/main/resources/public && mkdirp ../tacs-grupo1-api/src/main/resources/public",
